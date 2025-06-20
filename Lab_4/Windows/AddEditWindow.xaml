@@ -1,0 +1,33 @@
+﻿<Window x:Class="Lab_4.Windows.AddEditWindow"
+ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Новий продукт" Height="400" Width="400" WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel>
+            <TextBlock Text="Назва:"/>
+            <TextBox x:Name="NameBox" Margin="0,5"/>
+
+            <TextBlock Text="Категорія:"/>
+            <TextBox x:Name="CategoryBox" Margin="0,5"/>
+
+            <TextBlock Text="Вид:"/>
+            <TextBox x:Name="TypeBox" Margin="0,5"/>
+
+            <TextBlock Text="Термін придатності:"/>
+            <DatePicker x:Name="ExpirationDatePicker" Margin="0,5"/>
+
+            <TextBlock Text="Постачальник:"/>
+            <TextBox x:Name="SupplierBox" Margin="0,5"/>
+
+            <TextBlock Text="Ціна:"/>
+            <TextBox x:Name="PriceBox" Margin="0,5"/>
+        </StackPanel>
+
+        <Button Content="Зберегти" Grid.Row="1" Height="30" Margin="0,10,0,0" Click="Save_Click"/>
+    </Grid>
+</Window>
